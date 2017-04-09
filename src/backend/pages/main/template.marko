@@ -1,0 +1,18 @@
+<lasso-page package-path="./browser.json"/>
+
+<layout-use("../../../layouts/default/template.marko")>
+<layout-put into="title">
+    MarkoJS and F7 sample
+</layout-put>
+<layout-put into="yield">
+    <hamburger-menu></hamburger-menu>
+    <div class="views">
+        <div class="view view-main container-view">
+            <div class="navbar ios-nav-bar"></div>
+            <div class="pages navbar-through">
+                <app-schedule-pages/>
+            </div>
+        </div>
+    </div>
+</layout-put>
+</layout-use>

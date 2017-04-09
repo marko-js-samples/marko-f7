@@ -1,0 +1,20 @@
+{
+  "dependencies": [
+    "./styles.less",
+    "src/layouts/default/browser.json",
+    "src/components-conference/app-conferences-list/browser.json",
+    "src/components-dashboard/app-dashboard/browser.json",
+    "src/components-leaderboard/app-leaderboard/browser.json",
+    "src/components-proposal/app-proposals/browser.json",
+    "src/components-proposal/app-proposal-detail/browser.json",
+    "src/components-mingle/app-mingle/browser.json",
+    "src/components-mingle/app-chat/browser.json",
+    "src/components-schedule/app-schedule-pages/browser.json",
+    "src/components-sponsor/app-sponsor-list/browser.json",
+    "src/components-sponsor/app-sponsor-detail/browser.json",
+    "src/components-sponsor/app-collect-leads/browser.json",
+    "src/components-sponsor/app-list-leads/browser.json",
+    "src/components-sponsor/app-goodie-claim/browser.json",
+    "src/components-user/app-user-detail/browser.json"
+  ]
+}

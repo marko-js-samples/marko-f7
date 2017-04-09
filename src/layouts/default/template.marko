@@ -1,0 +1,47 @@
+<marko-compiler-options preserve-whitespace/>
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <title>
+        <layout-placeholder name="title"/>
+    </title>
+
+    <!--
+    <link> tags to include optimized CSS URLs will be included below:
+    -->
+    <!--<script src="http://console.re/connector.js" data-channel="conf-ng-js" id="consolerescript"></script>-->
+    <script>
+       
+    </script>
+    
+    <lasso-head/>
+</head>
+<body>
+<layout-placeholder name="yield"/>
+
+<!--
+<script> tags to include optimized JS URLs will be included below:
+-->
+<lasso-body/>
+
+
+<!-- Code to initialize widgets will be inserted below -->
+<init-widgets immediate/>
+
+<!-- Out-of-order async fragments (if any) will be rendered below -->
+<await-reorderer/>
+
+<!--
+If the browser is started using the browser-refresh launcher
+then a <script> tag will be injected below to open a WebSocket
+connection to the server
+-->
+<!--<browser-refresh enabled="true" />-->
+</body>
+</html>

@@ -1,0 +1,5 @@
+.DS_Store
+.history
+.cache
+public
+node_modules
