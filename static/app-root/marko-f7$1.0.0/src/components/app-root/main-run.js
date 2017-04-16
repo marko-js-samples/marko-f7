@@ -1,0 +1,1 @@
+$_mod.run("/marko-f7$1.0.0/src/components/app-root/main");
