@@ -1,23 +1,5 @@
 require('marko/node-require').install();
 require('marko/express'); //enable res.marko
-var lassoConfig = {
-    "plugins": [ {
-        "plugin": "lasso-marko"
-
-    }],
-    "fileWriter": {
-        "outputDir": "static",
-        "fingerprintsEnabled": true,
-        "includeSlotNames": false,
-        "urlPrefix": "/static"
-
-    },
-    "minify": false,
-    "resolveCssUrls": true,
-    "bundlingEnabled": false,
-    "bundles": []
-};
-
 require('lasso').configure('lasso-config.json')
 var express = require('express');
 var serveStatic = require('serve-static');

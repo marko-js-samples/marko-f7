@@ -1,6 +1,5 @@
 {
   "dependencies": [
-    "require: framework7",    
     {"path": "framework7-icons/css/framework7-icons.css"},
     {"path": "framework7/dist/css/framework7.material.css"},
     {"path": "framework7/dist/css/framework7.material.colors.css"},
