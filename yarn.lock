@@ -1099,7 +1099,7 @@ loose-envify@^1.0.0:
   dependencies:
     js-tokens "^3.0.0"
 
-marko@^4.1.1:
+marko@^4.1.1, marko@^4.2.8:
   version "4.2.8"
   resolved "https://registry.yarnpkg.com/marko/-/marko-4.2.8.tgz#9d59928284850f27e014377eb5194c83465f0edb"
   dependencies:

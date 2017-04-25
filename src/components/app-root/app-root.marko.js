@@ -7,6 +7,11 @@ var marko_template = module.exports = require("marko/html").t(__filename),
     marko_loadTag = marko_helpers.t,
     lasso_page_tag = marko_loadTag(require("lasso/taglib/config-tag")),
     lasso_head_tag = marko_loadTag(require("lasso/taglib/head-tag")),
+    marko_loadTemplate = require("marko/runtime/helper-loadTemplate"),
+    app_home_template = marko_loadTemplate(require.resolve("../components/app-home.marko")),
+    app_home_tag = marko_loadTag(app_home_template),
+    app_about_template = marko_loadTemplate(require.resolve("../components/app-about.marko")),
+    app_about_tag = marko_loadTag(app_about_template),
     lasso_body_tag = marko_loadTag(require("lasso/taglib/body-tag")),
     init_components_tag = marko_loadTag(require("marko/components/taglib/init-components-tag")),
     await_reorderer_tag = marko_loadTag(require("marko/taglibs/async/await-reorderer-tag"));
@@ -24,7 +29,13 @@ function render(input, out) {
 
   lasso_head_tag({}, out);
 
-  out.w("</head><body><div class=\"statusbar-overlay\"></div><div class=\"panel-overlay\"></div><div class=\"panel panel-left panel-reveal\"><div class=\"content-block\"><p>Left panel content goes here</p></div></div><div class=\"views\"><div class=\"view view-main\"><div class=\"navbar\"><div class=\"navbar-inner\"><div class=\"center sliding\">Awesome App</div><div class=\"right\"><a href=\"#\" class=\"link icon-only open-panel\"><i class=\"icon icon-bars\"></i></a></div></div></div><div class=\"pages navbar-through toolbar-through\"><div data-page=\"index\" class=\"page\"><div class=\"page-content\"><p>Page content goes here</p><a href=\"about.html\">About app</a></div></div></div><div class=\"toolbar\"><div class=\"toolbar-inner\"><a href=\"#\" class=\"link\">Link 1</a><a href=\"#\" class=\"link\">Link 2</a></div></div></div></div>");
+  out.w("</head><body><div class=\"views\"><div class=\"view view-main\"><div class=\"pages\">");
+
+  app_home_tag({}, out);
+
+  app_about_tag({}, out);
+
+  out.w("</div></div></div>");
 
   lasso_body_tag({}, out);
 
@@ -41,6 +52,8 @@ marko_template.meta = {
     tags: [
       "lasso/taglib/config-tag",
       "lasso/taglib/head-tag",
+      "../components/app-home.marko",
+      "../components/app-about.marko",
       "lasso/taglib/body-tag",
       "marko/components/taglib/init-components-tag",
       "marko/taglibs/async/await-reorderer-tag"
