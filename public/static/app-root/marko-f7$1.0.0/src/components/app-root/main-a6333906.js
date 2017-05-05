@@ -1,0 +1,1 @@
+$_mod.def("/marko-f7$1.0.0/src/components/app-root/main",function(a,o,m,n,e){var r=new Framework7;Dom7,r.addView(".view-main",{dynamicNavbar:!1,domCache:!0})});

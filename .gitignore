@@ -3,5 +3,5 @@
 .cache
 
 node_modules
-static
+./static/
 .vscode
