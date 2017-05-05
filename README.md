@@ -5,9 +5,20 @@ The app uses inline pages to transition bewtween different page views
 
 
 
-## Steps to run the sample app
+## Steps to run the sample app in node js
 
 
 * npm install
 
 * node app.js
+
+
+
+##Steps to create a static website into public folder
+
+* gulp
+
+
+#DEMO
+
+[Demo App](https://rtalwar26.github.io/marko-f7/public)
