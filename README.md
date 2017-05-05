@@ -14,11 +14,11 @@ The app uses inline pages to transition bewtween different page views
 
 
 
-##Steps to create a static website into public folder
+## Steps to create a static website into public folder
 
 * gulp
 
 
-#DEMO
+## DEMO
 
 [Demo App](https://rtalwar26.github.io/marko-f7/public)
