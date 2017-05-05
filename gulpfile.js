@@ -49,7 +49,7 @@ gulp.task('copy', function () {
 gulp.task('marko', ['copy'], function (cb) {
 
 
-return  renderPage('app-root');
+return  renderPage('app-root','index.html');
     // return Promise.all([
     //     renderPage('app-root'),
     //     renderPage('schedule'),
@@ -63,16 +63,16 @@ return  renderPage('app-root');
 
 })
 
-function renderPage(pageName) {
+function renderPage(pageName,htmlFileName) {
     return new Promise(function (resolve, reject) {
         let main = require(`./src/components/${pageName}/${pageName}`);
         var htmlProm = main.render({});
 
         htmlProm.then((html) => {
 
-            fs.writeFileSync(`./${directoryName}/` + pageName + '.html', html)
+            fs.writeFileSync(`./${directoryName}/` + htmlFileName, html)
 
-            console.log('done rendering: ', `${pageName}.html`)
+            console.log('done rendering: ', `${htmlFileName}`)
             resolve();
         })
 
