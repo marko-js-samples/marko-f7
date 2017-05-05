@@ -18,7 +18,7 @@ require('lasso').configure({
     "fileWriter": {
         "outputDir": `${directoryName}/static`,
         "fingerprintsEnabled": isProd,
-        "urlPrefix": "/static/"
+        "urlPrefix": "https://rtalwar26.github.io/marko-f7/public/static/"
     },
     "minify": isProd,
     "resolveCssUrls": true,
