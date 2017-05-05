@@ -13,9 +13,12 @@
     "framework7": "^1.6.0",
     "framework7-icons": "^0.8.9",
     "lasso": "^2.11.8",
+    "lasso-less": "^2.4.3",
     "lasso-marko": "^2.3.0",
     "marko": "^4.2.8",
     "serve-static": "^1.12.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
